@@ -1,3 +1,7 @@
-controller:
-  service:
-    type: LoadBalancer
+replicaCount: 1
+image:
+  repository: nginx
+  tag: "latest"
+service:
+  type: ClusterIP
+  port: 80
